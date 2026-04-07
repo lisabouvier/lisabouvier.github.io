@@ -1,0 +1,253 @@
+
+body {
+  background-color: #f9f9f9;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #242424;
+  line-height: 1.25;
+  margin-top: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+nav {
+  height: 100px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav__link--list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav__link--anchor {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  position: relative;
+  padding: 4px 0;
+}
+
+.nav__link--anchor::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: #8B1E3F;
+  transition: width 0.3s ease;
+}
+
+.nav__link--anchor:hover::after {
+  width: 100%;
+}
+
+.personal_logo {
+  font-size: 32px;
+  font-weight: 700;
+  color: #8B1E3F;
+  letter-spacing: 1px;
+  transition: opacity 0.2s ease;
+  text-decoration: none;
+}
+
+.personal_logo:hover {
+  opacity: 0.8;
+}
+
+.section__title {
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#about {
+  padding: 40px 20px;
+}
+
+.about__container {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about__text {
+  margin-top: 15px;
+  line-height: 1.6;
+  color: #555;
+  font-size: 16px;
+}
+
+.about__tagline {
+  font-size: 14px;
+  color: #8B1E3F;
+  opacity: 0.9;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about__photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 20px;
+  display: block;
+  border: 3px solid #8B1E3F;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+#projects {
+  padding: 40px 20px;
+}
+
+.projects__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.project {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  background-color: white;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project__image {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project__title {
+  font-size: 22px;
+  margin-bottom: 6px;
+  color: #8B1E3F;
+  text-align: center;
+}
+
+.project__tagline {
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 12px;
+  color: #8B1E3F;
+  opacity: 0.85;
+  text-align: center;
+}
+
+.project__description {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.project__tech {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.project__links {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project__button {
+  display: inline-block;
+  background-color: #8B1E3F;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.project__button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  background-color: #741733;
+}
+
+.project__link {
+  color: #8B1E3F;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project__link:hover {
+  text-decoration: underline;
+}
+
+.contact__button {
+  display: inline-block;
+  background-color: #8B1E3F;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 15px;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.contact__button:hover {
+    background-color: #741733;
+    transform: translateY(-2px);
+}
+
+#contact {
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+.contact__text {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 16px;
+}
